@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace UserMaintanance.Entities
 {
-    class User
+    public class User
     {
-        public Guid guid { get; set; } = Guid.NewGuid();
+        public Guid ID { get; set; } = Guid.NewGuid();
         public string FirstName { get; set; }
         public  string LastName { get; set; }
         
-        private string _fullname;
-
         public string FullName 
         {
             get { return LastName + " " + FirstName; }
