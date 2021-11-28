@@ -70,6 +70,15 @@ namespace UserMaintanance {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Törlés.
+        /// </summary>
+        internal static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fájlba mentés.
         /// </summary>
         internal static string Fajlbairas {
