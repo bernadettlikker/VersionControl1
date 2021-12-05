@@ -73,6 +73,7 @@ namespace Olympics
                     mtomb[0] = int.Parse(mezok[5]);
                     mtomb[1] = int.Parse(mezok[6]);
                     mtomb[2] = int.Parse(mezok[7]);
+
                     or.Medals = mtomb;
                     results.Add(or);
                 }
@@ -135,7 +136,7 @@ namespace Olympics
             {
                 xlSheet.Cells[aktsor, 1] = item.Position;
                 xlSheet.Cells[aktsor, 2] = item.Country;
-                for (int i = 0; i < 2; i++)
+                for (int i = 0; i < 3; i++)
                 {
                     xlSheet.Cells[aktsor, 3 + i] = item.Medals[i];
                 }
