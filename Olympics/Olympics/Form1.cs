@@ -22,6 +22,30 @@ namespace Olympics
             Betolt("Summer_olympic_Medals.csv");
 
             ComboFeltolt();
+            Osztalyozas();
+        }
+
+        private void Osztalyozas()
+        {
+            foreach (OlympicResult item in results)
+            {
+                item.Position = Helyezes(item);
+            }
+        }
+
+        int Helyezes(OlympicResult res)
+        {
+            int counter = 0;
+            var szurt = from x in results where x.Year == res.Year && x.Country != res.Country select x;
+            foreach (OlympicResult item in szurt)
+            {
+                if (item.Medals[0] > res.Medals[0]) counter++;
+                else if ((item.Medals[0] == res.Medals[0]) && (item.Medals[1] > res.Medals[1])) counter++;
+                else if ((item.Medals[0] == res.Medals[0]) && (item.Medals[1] == res.Medals[1]) && (item.Medals[2] > res.Medals[2])) counter++;
+
+            }
+
+            return counter + 1;
         }
 
         private void ComboFeltolt()
@@ -47,6 +71,7 @@ namespace Olympics
                     mtomb[0] = int.Parse(mezok[5]);
                     mtomb[1] = int.Parse(mezok[6]);
                     mtomb[2] = int.Parse(mezok[7]);
+                    or.Medals = mtomb;
                     results.Add(or);
                 }
             }
