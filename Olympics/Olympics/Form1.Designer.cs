@@ -31,6 +31,7 @@ namespace Olympics
         {
             this.cbxEv = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnExcel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbxEv
@@ -50,11 +51,22 @@ namespace Olympics
             this.label1.TabIndex = 1;
             this.label1.Text = "Év";
             // 
+            // btnExcel
+            // 
+            this.btnExcel.Location = new System.Drawing.Point(351, 27);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(132, 38);
+            this.btnExcel.TabIndex = 2;
+            this.btnExcel.Text = "Excelbe ment";
+            this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbxEv);
             this.Name = "Form1";
@@ -69,6 +81,7 @@ namespace Olympics
 
         private System.Windows.Forms.ComboBox cbxEv;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnExcel;
     }
 }
 
