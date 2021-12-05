@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProgramTervezesiMintak.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,23 @@ namespace ProgramTervezesiMintak
 {
     public partial class Form1 : Form
     {
+        List<Ball> _balls;
+        private BallFactory ballFactory;
+
+        public BallFactory Factory
+        {
+            get { return ballFactory; }
+            set { ballFactory = value; }
+        }
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
