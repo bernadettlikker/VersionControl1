@@ -1,4 +1,5 @@
-﻿using ProgramTervezesiMintak.Entities;
+﻿using ProgramTervezesiMintak.Abstractions;
+using ProgramTervezesiMintak.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace ProgramTervezesiMintak
 {
     public partial class Form1 : Form
     {
-        List<Ball> _balls = new List<Ball>();
+        List<Toy> _toys = new List<Toy>();
         private BallFactory ballFactory;
 
         public BallFactory Factory
@@ -36,26 +37,26 @@ namespace ProgramTervezesiMintak
         private void createTimer_Tick(object sender, EventArgs e)
         {
             Ball b = Factory.CreateNew();
-            _balls.Add(b);
+            _toys.Add(b);
             b.Left = -b.Width;
             mainPanel.Controls.Add(b);
         }
 
         private void conveyorTimer_Tick(object sender, EventArgs e)
         {
-            if (_balls.Count == 0) return;
-            Ball lastBall = _balls[0];
+            if (_toys.Count == 0) return;
+            Toy lastBall = _toys[0];
 
-            foreach (Ball item in _balls)
+            foreach (Ball item in _toys)
             {
-                item.MoveBall();
+                item.MoveToy();
                 if (item.Left > lastBall.Left) lastBall = item;
                 
             }
 
             if (lastBall.Left > 1000)
             {
-                _balls.Remove(lastBall);
+                _toys.Remove(lastBall);
                 mainPanel.Controls.Remove(lastBall);
             }
         }
