@@ -27,7 +27,7 @@ namespace ProgramTervezesiMintak.Entities
             g.FillEllipse(new SolidBrush(Color.Red), 0, 0, Width, Height);
         }
 
-        void MoveBall()
+        public void MoveBall()
         {
             Left++;
         }
