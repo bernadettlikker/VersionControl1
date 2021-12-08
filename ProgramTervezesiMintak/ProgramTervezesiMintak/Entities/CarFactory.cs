@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace ProgramTervezesiMintak.Entities
 {
-    public class BallFactory: iToyFactory
+    class CarFactory: iToyFactory
     {
         public Toy CreateNew()
         {
-            return new Ball();
-        
+            return new Car();
         }
     }
 }
