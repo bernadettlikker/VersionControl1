@@ -15,9 +15,9 @@ namespace ProgramTervezesiMintak
     public partial class Form1 : Form
     {
         List<Toy> _toys = new List<Toy>();
-        private BallFactory ballFactory;
+        private iToyFactory ballFactory;
 
-        public BallFactory Factory
+        public iToyFactory Factory
         {
             get { return ballFactory; }
             set { ballFactory = value; }
@@ -26,7 +26,7 @@ namespace ProgramTervezesiMintak
         public Form1()
         {
             InitializeComponent();
-            Factory = new BallFactory();
+            Factory = new CarFactory();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace ProgramTervezesiMintak
 
         private void createTimer_Tick(object sender, EventArgs e)
         {
-            Ball b = Factory.CreateNew();
+            Toy b = Factory.CreateNew();
             _toys.Add(b);
             b.Left = -b.Width;
             mainPanel.Controls.Add(b);
@@ -47,7 +47,7 @@ namespace ProgramTervezesiMintak
             if (_toys.Count == 0) return;
             Toy lastBall = _toys[0];
 
-            foreach (Ball item in _toys)
+            foreach (Toy item in _toys)
             {
                 item.MoveToy();
                 if (item.Left > lastBall.Left) lastBall = item;
