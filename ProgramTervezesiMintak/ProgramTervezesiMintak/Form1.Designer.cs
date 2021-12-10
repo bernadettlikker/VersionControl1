@@ -36,14 +36,14 @@ namespace ProgramTervezesiMintak
             this.btnCar = new System.Windows.Forms.Button();
             this.btnBall = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnBallColor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
-            this.mainPanel.Location = new System.Drawing.Point(1, 164);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainPanel.Location = new System.Drawing.Point(2, 252);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(535, 131);
+            this.mainPanel.Size = new System.Drawing.Size(802, 202);
             this.mainPanel.TabIndex = 0;
             // 
             // createTimer
@@ -60,9 +60,10 @@ namespace ProgramTervezesiMintak
             // 
             // btnCar
             // 
-            this.btnCar.Location = new System.Drawing.Point(13, 13);
+            this.btnCar.Location = new System.Drawing.Point(20, 20);
+            this.btnCar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCar.Name = "btnCar";
-            this.btnCar.Size = new System.Drawing.Size(75, 23);
+            this.btnCar.Size = new System.Drawing.Size(112, 35);
             this.btnCar.TabIndex = 1;
             this.btnCar.Text = "Car";
             this.btnCar.UseVisualStyleBackColor = true;
@@ -70,9 +71,10 @@ namespace ProgramTervezesiMintak
             // 
             // btnBall
             // 
-            this.btnBall.Location = new System.Drawing.Point(111, 13);
+            this.btnBall.Location = new System.Drawing.Point(166, 20);
+            this.btnBall.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBall.Name = "btnBall";
-            this.btnBall.Size = new System.Drawing.Size(75, 23);
+            this.btnBall.Size = new System.Drawing.Size(112, 35);
             this.btnBall.TabIndex = 2;
             this.btnBall.Text = "Ball";
             this.btnBall.UseVisualStyleBackColor = true;
@@ -81,22 +83,33 @@ namespace ProgramTervezesiMintak
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 43);
+            this.label1.Location = new System.Drawing.Point(13, 144);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.Size = new System.Drawing.Size(97, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Coming next";
             // 
+            // btnBallColor
+            // 
+            this.btnBallColor.BackColor = System.Drawing.Color.Red;
+            this.btnBallColor.Location = new System.Drawing.Point(166, 79);
+            this.btnBallColor.Name = "btnBallColor";
+            this.btnBallColor.Size = new System.Drawing.Size(112, 33);
+            this.btnBallColor.TabIndex = 4;
+            this.btnBallColor.UseVisualStyleBackColor = false;
+            this.btnBallColor.Click += new System.EventHandler(this.butnBallColor_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 292);
+            this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.btnBallColor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBall);
             this.Controls.Add(this.btnCar);
             this.Controls.Add(this.mainPanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -113,6 +126,7 @@ namespace ProgramTervezesiMintak
         private System.Windows.Forms.Button btnCar;
         private System.Windows.Forms.Button btnBall;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBallColor;
     }
 }
 

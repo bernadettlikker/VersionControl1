@@ -85,7 +85,17 @@ namespace ProgramTervezesiMintak
 
         private void btnBall_Click(object sender, EventArgs e)
         {
-            Factory = new BallFactory();
+            Factory = new BallFactory() { BallColor = btnBallColor.BackColor };
+        }
+
+        private void butnBallColor_Click(object sender, EventArgs e)
+        {
+            Button kattintott = (Button)sender;
+            ColorDialog cd = new ColorDialog();
+
+            if (cd.ShowDialog() != DialogResult.OK) return;
+            kattintott.BackColor = cd.Color;
+            //Factory.
         }
     }
 }
