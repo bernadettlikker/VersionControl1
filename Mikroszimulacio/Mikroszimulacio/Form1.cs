@@ -22,14 +22,20 @@ namespace Mikroszimulacio
         
         public Form1()
         {
-            InitializeComponent();
-            Population = GetPopulation(@"C:\Temp\nép - teszt.csv");
-            BirthProbabilities = GetBirthProbabilities(@"C:\Temp\születés.csv");
-            DeathProbabilities = GetDeathProbabilities(@"C:\Temp\halál.csv");
+            
 
             //Simulation();
 
-            for (int year = 2005; year < 2024; year++)
+        }
+
+        private void Simulation(int zaroev, string fajlnev)
+        {
+            InitializeComponent();
+            Population = GetPopulation(fajlnev);
+            BirthProbabilities = GetBirthProbabilities(@"C:\Temp\születés.csv");
+            DeathProbabilities = GetDeathProbabilities(@"C:\Temp\halál.csv");
+
+            for (int year = 2005; year <= zaroev; year++)
             {
                 for (int i = 0; i < Population.Count; i++)
                 {
@@ -41,10 +47,8 @@ namespace Mikroszimulacio
 
                 Console.WriteLine(string.Format("Év:{0} Férfiak: {1} Nők {2}", year, ferfiakszama, nokszama));
             }
-            
         }
 
-       
 
         private void SzimulaciosLepes(Person person, int year)
         {
@@ -139,6 +143,17 @@ namespace Mikroszimulacio
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Simulation((int) numericUpDown1.Value, textBox1.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() == DialogResult.OK) textBox1.Text = ofd.FileName;
         }
     }
 }
