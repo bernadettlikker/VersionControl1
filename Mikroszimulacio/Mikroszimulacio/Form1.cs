@@ -17,12 +17,14 @@ namespace Mikroszimulacio
         List<Person> Population;
         List<BirthProbabilities> BirthProbabilities;
         List<DeathProbabilities> DeathProbabilities;
+        List<int> ferfiak = new List<int>();
+        List<int> nok = new List<int>();
 
         Random rng = new Random(1234);
         
         public Form1()
         {
-            
+            InitializeComponent();
 
             //Simulation();
 
@@ -30,7 +32,8 @@ namespace Mikroszimulacio
 
         private void Simulation(int zaroev, string fajlnev)
         {
-            InitializeComponent();
+            ferfiak.Clear();
+            nok.Clear();
             Population = GetPopulation(fajlnev);
             BirthProbabilities = GetBirthProbabilities(@"C:\Temp\születés.csv");
             DeathProbabilities = GetDeathProbabilities(@"C:\Temp\halál.csv");
@@ -45,10 +48,22 @@ namespace Mikroszimulacio
                 int ferfiakszama = (from x in Population where x.Gender == Gender.Male select x).Count();
                 int nokszama = (from x in Population where x.Gender == Gender.Female select x).Count();
 
+                ferfiak.Add(ferfiakszama);
+                nok.Add(nokszama);
+
                 Console.WriteLine(string.Format("Év:{0} Férfiak: {1} Nők {2}", year, ferfiakszama, nokszama));
             }
         }
 
+        void Displayresults(int zaroev)
+        {
+            int counter = 0;
+            for (int year = 2005; year <= zaroev; year++)
+            {
+                richTextBox1.Text += String.Format("Szimulásciós év: {0} \n\tFérfiak:{ 1} \n\tNők: { 1}\n\n", year, ferfiak[counter], nok[counter]);
+                counter++;
+            }
+        }
 
         private void SzimulaciosLepes(Person person, int year)
         {

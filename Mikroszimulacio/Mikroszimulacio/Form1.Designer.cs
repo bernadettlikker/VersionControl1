@@ -80,9 +80,24 @@ namespace Mikroszimulacio
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(69, 7);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            2024,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            2005,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(97, 26);
             this.numericUpDown1.TabIndex = 4;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            2024,
+            0,
+            0,
+            0});
             // 
             // textBox1
             // 
