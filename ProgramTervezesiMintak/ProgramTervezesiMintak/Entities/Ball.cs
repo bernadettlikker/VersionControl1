@@ -11,7 +11,7 @@ namespace ProgramTervezesiMintak.Entities
 {
     public class Ball: Toy
     {
-        public SolidBrush BallBrush { get; set; }
+        public SolidBrush BallBrush { get; private set; }
 
         public Ball( Color kivantszin)
         {
