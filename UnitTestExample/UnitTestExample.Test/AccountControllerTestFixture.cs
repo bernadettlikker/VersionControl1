@@ -32,6 +32,7 @@ namespace UnitTestExample.Test
         }
 
         //"A jelszó legalább 8 karakter hosszú kell legyen, csak az angol ABC betűiből és számokból állhat, és tartalmaznia kell legalább egy kisbetűt, egy nagybetűt és egy számot.
+        
         [Test,
             TestCase("Abc1", false),
             TestCase("abcdabcd", false),
@@ -74,10 +75,12 @@ namespace UnitTestExample.Test
         }
 
         [Test,
-            TestCase("irf@uni-corvinus.hu", "Abcd1234"),
-            TestCase("irf@uni-corvinus.hu", "AbcD1234"),
-            TestCase("irf@uni-corvinus.hu", "abcD1234"),
-            TestCase("irf@uni-corvinus.hu", "ABcD1234")
+            TestCase("irf@uni-corvinus", "Abcd1234"),
+            TestCase("irf.uni-corvinus.hu", "Abcd1234"),
+            TestCase("irf@uni-corvinus.hu", "abcd1234"),
+            TestCase("irf@uni-corvinus.hu", "ABCD1234"),
+            TestCase("irf@uni-corvinus.hu", "abcdABCD"),
+            TestCase("irf@uni-corvinus.hu", "Ab1234")
             ]
 
         public void TestRegisterValidateException(string email, string password)
@@ -91,12 +94,12 @@ namespace UnitTestExample.Test
                 var actualResult = accountController.Register(email, password);
                 Assert.Fail();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 Assert.IsInstanceOf<ValidationException>(ex);
                 
             }
-            var actualResult = accountController.Register(email, password);
+            
 
             //Assert
             
