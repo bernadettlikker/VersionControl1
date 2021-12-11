@@ -21,7 +21,7 @@ namespace UnitTestExample.Services
                               select a).FirstOrDefault();
 
             if (oldAccount != null)
-                throw new ValidationException(
+                throw new ApplicationException(
                     "Már létezik felhasználó ilyen e-mail címmel!");
 
             account.ID = Guid.NewGuid();

@@ -38,7 +38,6 @@ namespace UnitTestExample.Test
             TestCase("abcdabcd", false),
             TestCase("abcdABCD", false),
             TestCase("ABCDABCD", false),
-            TestCase("Abc1", false),
             TestCase("Abc1Abc1", true)
             ]
 
@@ -57,7 +56,7 @@ namespace UnitTestExample.Test
 
         [Test,
             TestCase("irf@uni-corvinus.hu","Abcd1234"),
-            TestCase("irf@uni-corvinus.hu", "Abcd1234456")
+            TestCase("irf@uni-corvinus.hu","Abcd1234456")
             ]
 
         public void TestRedisterHappyPath(string email, string password)
@@ -75,12 +74,12 @@ namespace UnitTestExample.Test
         }
 
         [Test,
-            TestCase("irf@uni-corvinus", "Abcd1234"),
-            TestCase("irf.uni-corvinus.hu", "Abcd1234"),
-            TestCase("irf@uni-corvinus.hu", "abcd1234"),
-            TestCase("irf@uni-corvinus.hu", "ABCD1234"),
-            TestCase("irf@uni-corvinus.hu", "abcdABCD"),
-            TestCase("irf@uni-corvinus.hu", "Ab1234")
+            TestCase("irf@uni-corvinus","Abcd1234"),
+            TestCase("irf.uni-corvinus.hu","Abcd1234"),
+            TestCase("irf@uni-corvinus.hu","abcd1234"),
+            TestCase("irf@uni-corvinus.hu","ABCD1234"),
+            TestCase("irf@uni-corvinus.hu","abcdABCD"),
+            TestCase("irf@uni-corvinus.hu","Ab1234")
             ]
 
         public void TestRegisterValidateException(string email, string password)
