@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MNBXml.MNBServiceReference1 {
+namespace MNBXml.MNBServiceReference {
     using System.Runtime.Serialization;
     using System;
     
@@ -522,59 +522,59 @@ namespace MNBXml.MNBServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.mnb.hu/webservices/", ConfigurationName="MNBServiceReference1.MNBArfolyamServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.mnb.hu/webservices/", ConfigurationName="MNBServiceReference.MNBArfolyamServiceSoap")]
     public interface MNBArfolyamServiceSoap {
         
         // CODEGEN: Generating message contract since the operation GetCurrencies is neither RPC nor document wrapped.
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrencies", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrenciesResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrenciesStringFault", Name="string", Namespace="http://schemas.microsoft.com/2003/10/Serialization/")]
-        MNBXml.MNBServiceReference1.GetCurrenciesResponse GetCurrencies(MNBXml.MNBServiceReference1.GetCurrenciesRequest request);
+        MNBXml.MNBServiceReference.GetCurrenciesResponse GetCurrencies(MNBXml.MNBServiceReference.GetCurrenciesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrencies", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrenciesResponse")]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetCurrenciesResponse> GetCurrenciesAsync(MNBXml.MNBServiceReference1.GetCurrenciesRequest request);
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetCurrenciesResponse> GetCurrenciesAsync(MNBXml.MNBServiceReference.GetCurrenciesRequest request);
         
         // CODEGEN: Generating message contract since the operation GetCurrencyUnits is neither RPC nor document wrapped.
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrencyUnits", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrencyUnitsResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrencyUnitsStringFault", Name="string", Namespace="http://schemas.microsoft.com/2003/10/Serialization/")]
-        MNBXml.MNBServiceReference1.GetCurrencyUnitsResponse GetCurrencyUnits(MNBXml.MNBServiceReference1.GetCurrencyUnitsRequest request);
+        MNBXml.MNBServiceReference.GetCurrencyUnitsResponse GetCurrencyUnits(MNBXml.MNBServiceReference.GetCurrencyUnitsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrencyUnits", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrencyUnitsResponse")]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetCurrencyUnitsResponse> GetCurrencyUnitsAsync(MNBXml.MNBServiceReference1.GetCurrencyUnitsRequest request);
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetCurrencyUnitsResponse> GetCurrencyUnitsAsync(MNBXml.MNBServiceReference.GetCurrencyUnitsRequest request);
         
         // CODEGEN: Generating message contract since the operation GetCurrentExchangeRates is neither RPC nor document wrapped.
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrentExchangeRates", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrentExchangeRatesRespo" +
             "nse")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrentExchangeRatesStrin" +
             "gFault", Name="string", Namespace="http://schemas.microsoft.com/2003/10/Serialization/")]
-        MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponse GetCurrentExchangeRates(MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequest request);
+        MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponse GetCurrentExchangeRates(MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrentExchangeRates", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrentExchangeRatesRespo" +
             "nse")]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponse> GetCurrentExchangeRatesAsync(MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequest request);
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponse> GetCurrentExchangeRatesAsync(MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequest request);
         
         // CODEGEN: Generating message contract since the operation GetDateInterval is neither RPC nor document wrapped.
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetDateInterval", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetDateIntervalResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetDateIntervalStringFault", Name="string", Namespace="http://schemas.microsoft.com/2003/10/Serialization/")]
-        MNBXml.MNBServiceReference1.GetDateIntervalResponse GetDateInterval(MNBXml.MNBServiceReference1.GetDateIntervalRequest request);
+        MNBXml.MNBServiceReference.GetDateIntervalResponse GetDateInterval(MNBXml.MNBServiceReference.GetDateIntervalRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetDateInterval", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetDateIntervalResponse")]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetDateIntervalResponse> GetDateIntervalAsync(MNBXml.MNBServiceReference1.GetDateIntervalRequest request);
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetDateIntervalResponse> GetDateIntervalAsync(MNBXml.MNBServiceReference.GetDateIntervalRequest request);
         
         // CODEGEN: Generating message contract since the operation GetExchangeRates is neither RPC nor document wrapped.
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetExchangeRates", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetExchangeRatesResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetExchangeRatesStringFault", Name="string", Namespace="http://schemas.microsoft.com/2003/10/Serialization/")]
-        MNBXml.MNBServiceReference1.GetExchangeRatesResponse GetExchangeRates(MNBXml.MNBServiceReference1.GetExchangeRatesRequest request);
+        MNBXml.MNBServiceReference.GetExchangeRatesResponse GetExchangeRates(MNBXml.MNBServiceReference.GetExchangeRatesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetExchangeRates", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetExchangeRatesResponse")]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetExchangeRatesResponse> GetExchangeRatesAsync(MNBXml.MNBServiceReference1.GetExchangeRatesRequest request);
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetExchangeRatesResponse> GetExchangeRatesAsync(MNBXml.MNBServiceReference.GetExchangeRatesRequest request);
         
         // CODEGEN: Generating message contract since the operation GetInfo is neither RPC nor document wrapped.
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetInfo", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetInfoResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetInfoStringFault", Name="string", Namespace="http://schemas.microsoft.com/2003/10/Serialization/")]
-        MNBXml.MNBServiceReference1.GetInfoResponse GetInfo(MNBXml.MNBServiceReference1.GetInfoRequest request);
+        MNBXml.MNBServiceReference.GetInfoResponse GetInfo(MNBXml.MNBServiceReference.GetInfoRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetInfo", ReplyAction="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetInfoResponse")]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetInfoResponse> GetInfoAsync(MNBXml.MNBServiceReference1.GetInfoRequest request);
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetInfoResponse> GetInfoAsync(MNBXml.MNBServiceReference.GetInfoRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -584,12 +584,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetCurrenciesRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetCurrenciesRequestBody GetCurrencies;
+        public MNBXml.MNBServiceReference.GetCurrenciesRequestBody GetCurrencies;
         
         public GetCurrenciesRequest() {
         }
         
-        public GetCurrenciesRequest(MNBXml.MNBServiceReference1.GetCurrenciesRequestBody GetCurrencies) {
+        public GetCurrenciesRequest(MNBXml.MNBServiceReference.GetCurrenciesRequestBody GetCurrencies) {
             this.GetCurrencies = GetCurrencies;
         }
     }
@@ -601,12 +601,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetCurrenciesResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCurrenciesResponse", Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetCurrenciesResponseBody GetCurrenciesResponse1;
+        public MNBXml.MNBServiceReference.GetCurrenciesResponseBody GetCurrenciesResponse1;
         
         public GetCurrenciesResponse() {
         }
         
-        public GetCurrenciesResponse(MNBXml.MNBServiceReference1.GetCurrenciesResponseBody GetCurrenciesResponse1) {
+        public GetCurrenciesResponse(MNBXml.MNBServiceReference.GetCurrenciesResponseBody GetCurrenciesResponse1) {
             this.GetCurrenciesResponse1 = GetCurrenciesResponse1;
         }
     }
@@ -618,12 +618,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetCurrencyUnitsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetCurrencyUnitsRequestBody GetCurrencyUnits;
+        public MNBXml.MNBServiceReference.GetCurrencyUnitsRequestBody GetCurrencyUnits;
         
         public GetCurrencyUnitsRequest() {
         }
         
-        public GetCurrencyUnitsRequest(MNBXml.MNBServiceReference1.GetCurrencyUnitsRequestBody GetCurrencyUnits) {
+        public GetCurrencyUnitsRequest(MNBXml.MNBServiceReference.GetCurrencyUnitsRequestBody GetCurrencyUnits) {
             this.GetCurrencyUnits = GetCurrencyUnits;
         }
     }
@@ -635,12 +635,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetCurrencyUnitsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCurrencyUnitsResponse", Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetCurrencyUnitsResponseBody GetCurrencyUnitsResponse1;
+        public MNBXml.MNBServiceReference.GetCurrencyUnitsResponseBody GetCurrencyUnitsResponse1;
         
         public GetCurrencyUnitsResponse() {
         }
         
-        public GetCurrencyUnitsResponse(MNBXml.MNBServiceReference1.GetCurrencyUnitsResponseBody GetCurrencyUnitsResponse1) {
+        public GetCurrencyUnitsResponse(MNBXml.MNBServiceReference.GetCurrencyUnitsResponseBody GetCurrencyUnitsResponse1) {
             this.GetCurrencyUnitsResponse1 = GetCurrencyUnitsResponse1;
         }
     }
@@ -652,12 +652,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetCurrentExchangeRatesRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequestBody GetCurrentExchangeRates;
+        public MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequestBody GetCurrentExchangeRates;
         
         public GetCurrentExchangeRatesRequest() {
         }
         
-        public GetCurrentExchangeRatesRequest(MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequestBody GetCurrentExchangeRates) {
+        public GetCurrentExchangeRatesRequest(MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequestBody GetCurrentExchangeRates) {
             this.GetCurrentExchangeRates = GetCurrentExchangeRates;
         }
     }
@@ -669,12 +669,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetCurrentExchangeRatesResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCurrentExchangeRatesResponse", Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponseBody GetCurrentExchangeRatesResponse1;
+        public MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponseBody GetCurrentExchangeRatesResponse1;
         
         public GetCurrentExchangeRatesResponse() {
         }
         
-        public GetCurrentExchangeRatesResponse(MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponseBody GetCurrentExchangeRatesResponse1) {
+        public GetCurrentExchangeRatesResponse(MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponseBody GetCurrentExchangeRatesResponse1) {
             this.GetCurrentExchangeRatesResponse1 = GetCurrentExchangeRatesResponse1;
         }
     }
@@ -686,12 +686,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetDateIntervalRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetDateIntervalRequestBody GetDateInterval;
+        public MNBXml.MNBServiceReference.GetDateIntervalRequestBody GetDateInterval;
         
         public GetDateIntervalRequest() {
         }
         
-        public GetDateIntervalRequest(MNBXml.MNBServiceReference1.GetDateIntervalRequestBody GetDateInterval) {
+        public GetDateIntervalRequest(MNBXml.MNBServiceReference.GetDateIntervalRequestBody GetDateInterval) {
             this.GetDateInterval = GetDateInterval;
         }
     }
@@ -703,12 +703,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetDateIntervalResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetDateIntervalResponse", Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetDateIntervalResponseBody GetDateIntervalResponse1;
+        public MNBXml.MNBServiceReference.GetDateIntervalResponseBody GetDateIntervalResponse1;
         
         public GetDateIntervalResponse() {
         }
         
-        public GetDateIntervalResponse(MNBXml.MNBServiceReference1.GetDateIntervalResponseBody GetDateIntervalResponse1) {
+        public GetDateIntervalResponse(MNBXml.MNBServiceReference.GetDateIntervalResponseBody GetDateIntervalResponse1) {
             this.GetDateIntervalResponse1 = GetDateIntervalResponse1;
         }
     }
@@ -720,12 +720,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetExchangeRatesRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetExchangeRatesRequestBody GetExchangeRates;
+        public MNBXml.MNBServiceReference.GetExchangeRatesRequestBody GetExchangeRates;
         
         public GetExchangeRatesRequest() {
         }
         
-        public GetExchangeRatesRequest(MNBXml.MNBServiceReference1.GetExchangeRatesRequestBody GetExchangeRates) {
+        public GetExchangeRatesRequest(MNBXml.MNBServiceReference.GetExchangeRatesRequestBody GetExchangeRates) {
             this.GetExchangeRates = GetExchangeRates;
         }
     }
@@ -737,12 +737,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetExchangeRatesResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetExchangeRatesResponse", Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetExchangeRatesResponseBody GetExchangeRatesResponse1;
+        public MNBXml.MNBServiceReference.GetExchangeRatesResponseBody GetExchangeRatesResponse1;
         
         public GetExchangeRatesResponse() {
         }
         
-        public GetExchangeRatesResponse(MNBXml.MNBServiceReference1.GetExchangeRatesResponseBody GetExchangeRatesResponse1) {
+        public GetExchangeRatesResponse(MNBXml.MNBServiceReference.GetExchangeRatesResponseBody GetExchangeRatesResponse1) {
             this.GetExchangeRatesResponse1 = GetExchangeRatesResponse1;
         }
     }
@@ -754,12 +754,12 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetInfoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetInfoRequestBody GetInfo;
+        public MNBXml.MNBServiceReference.GetInfoRequestBody GetInfo;
         
         public GetInfoRequest() {
         }
         
-        public GetInfoRequest(MNBXml.MNBServiceReference1.GetInfoRequestBody GetInfo) {
+        public GetInfoRequest(MNBXml.MNBServiceReference.GetInfoRequestBody GetInfo) {
             this.GetInfo = GetInfo;
         }
     }
@@ -771,23 +771,23 @@ namespace MNBXml.MNBServiceReference1 {
     public partial class GetInfoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetInfoResponse", Namespace="http://www.mnb.hu/webservices/", Order=0)]
-        public MNBXml.MNBServiceReference1.GetInfoResponseBody GetInfoResponse1;
+        public MNBXml.MNBServiceReference.GetInfoResponseBody GetInfoResponse1;
         
         public GetInfoResponse() {
         }
         
-        public GetInfoResponse(MNBXml.MNBServiceReference1.GetInfoResponseBody GetInfoResponse1) {
+        public GetInfoResponse(MNBXml.MNBServiceReference.GetInfoResponseBody GetInfoResponse1) {
             this.GetInfoResponse1 = GetInfoResponse1;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface MNBArfolyamServiceSoapChannel : MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap, System.ServiceModel.IClientChannel {
+    public interface MNBArfolyamServiceSoapChannel : MNBXml.MNBServiceReference.MNBArfolyamServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class MNBArfolyamServiceSoapClient : System.ServiceModel.ClientBase<MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap>, MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap {
+    public partial class MNBArfolyamServiceSoapClient : System.ServiceModel.ClientBase<MNBXml.MNBServiceReference.MNBArfolyamServiceSoap>, MNBXml.MNBServiceReference.MNBArfolyamServiceSoap {
         
         public MNBArfolyamServiceSoapClient() {
         }
@@ -809,141 +809,141 @@ namespace MNBXml.MNBServiceReference1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        MNBXml.MNBServiceReference1.GetCurrenciesResponse MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetCurrencies(MNBXml.MNBServiceReference1.GetCurrenciesRequest request) {
+        MNBXml.MNBServiceReference.GetCurrenciesResponse MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetCurrencies(MNBXml.MNBServiceReference.GetCurrenciesRequest request) {
             return base.Channel.GetCurrencies(request);
         }
         
-        public MNBXml.MNBServiceReference1.GetCurrenciesResponseBody GetCurrencies(MNBXml.MNBServiceReference1.GetCurrenciesRequestBody GetCurrencies1) {
-            MNBXml.MNBServiceReference1.GetCurrenciesRequest inValue = new MNBXml.MNBServiceReference1.GetCurrenciesRequest();
+        public MNBXml.MNBServiceReference.GetCurrenciesResponseBody GetCurrencies(MNBXml.MNBServiceReference.GetCurrenciesRequestBody GetCurrencies1) {
+            MNBXml.MNBServiceReference.GetCurrenciesRequest inValue = new MNBXml.MNBServiceReference.GetCurrenciesRequest();
             inValue.GetCurrencies = GetCurrencies1;
-            MNBXml.MNBServiceReference1.GetCurrenciesResponse retVal = ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetCurrencies(inValue);
+            MNBXml.MNBServiceReference.GetCurrenciesResponse retVal = ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetCurrencies(inValue);
             return retVal.GetCurrenciesResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetCurrenciesResponse> MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetCurrenciesAsync(MNBXml.MNBServiceReference1.GetCurrenciesRequest request) {
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetCurrenciesResponse> MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetCurrenciesAsync(MNBXml.MNBServiceReference.GetCurrenciesRequest request) {
             return base.Channel.GetCurrenciesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetCurrenciesResponse> GetCurrenciesAsync(MNBXml.MNBServiceReference1.GetCurrenciesRequestBody GetCurrencies) {
-            MNBXml.MNBServiceReference1.GetCurrenciesRequest inValue = new MNBXml.MNBServiceReference1.GetCurrenciesRequest();
+        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetCurrenciesResponse> GetCurrenciesAsync(MNBXml.MNBServiceReference.GetCurrenciesRequestBody GetCurrencies) {
+            MNBXml.MNBServiceReference.GetCurrenciesRequest inValue = new MNBXml.MNBServiceReference.GetCurrenciesRequest();
             inValue.GetCurrencies = GetCurrencies;
-            return ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetCurrenciesAsync(inValue);
+            return ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetCurrenciesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        MNBXml.MNBServiceReference1.GetCurrencyUnitsResponse MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetCurrencyUnits(MNBXml.MNBServiceReference1.GetCurrencyUnitsRequest request) {
+        MNBXml.MNBServiceReference.GetCurrencyUnitsResponse MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetCurrencyUnits(MNBXml.MNBServiceReference.GetCurrencyUnitsRequest request) {
             return base.Channel.GetCurrencyUnits(request);
         }
         
-        public MNBXml.MNBServiceReference1.GetCurrencyUnitsResponseBody GetCurrencyUnits(MNBXml.MNBServiceReference1.GetCurrencyUnitsRequestBody GetCurrencyUnits1) {
-            MNBXml.MNBServiceReference1.GetCurrencyUnitsRequest inValue = new MNBXml.MNBServiceReference1.GetCurrencyUnitsRequest();
+        public MNBXml.MNBServiceReference.GetCurrencyUnitsResponseBody GetCurrencyUnits(MNBXml.MNBServiceReference.GetCurrencyUnitsRequestBody GetCurrencyUnits1) {
+            MNBXml.MNBServiceReference.GetCurrencyUnitsRequest inValue = new MNBXml.MNBServiceReference.GetCurrencyUnitsRequest();
             inValue.GetCurrencyUnits = GetCurrencyUnits1;
-            MNBXml.MNBServiceReference1.GetCurrencyUnitsResponse retVal = ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetCurrencyUnits(inValue);
+            MNBXml.MNBServiceReference.GetCurrencyUnitsResponse retVal = ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetCurrencyUnits(inValue);
             return retVal.GetCurrencyUnitsResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetCurrencyUnitsResponse> MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetCurrencyUnitsAsync(MNBXml.MNBServiceReference1.GetCurrencyUnitsRequest request) {
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetCurrencyUnitsResponse> MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetCurrencyUnitsAsync(MNBXml.MNBServiceReference.GetCurrencyUnitsRequest request) {
             return base.Channel.GetCurrencyUnitsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetCurrencyUnitsResponse> GetCurrencyUnitsAsync(MNBXml.MNBServiceReference1.GetCurrencyUnitsRequestBody GetCurrencyUnits) {
-            MNBXml.MNBServiceReference1.GetCurrencyUnitsRequest inValue = new MNBXml.MNBServiceReference1.GetCurrencyUnitsRequest();
+        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetCurrencyUnitsResponse> GetCurrencyUnitsAsync(MNBXml.MNBServiceReference.GetCurrencyUnitsRequestBody GetCurrencyUnits) {
+            MNBXml.MNBServiceReference.GetCurrencyUnitsRequest inValue = new MNBXml.MNBServiceReference.GetCurrencyUnitsRequest();
             inValue.GetCurrencyUnits = GetCurrencyUnits;
-            return ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetCurrencyUnitsAsync(inValue);
+            return ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetCurrencyUnitsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponse MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetCurrentExchangeRates(MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequest request) {
+        MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponse MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetCurrentExchangeRates(MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequest request) {
             return base.Channel.GetCurrentExchangeRates(request);
         }
         
-        public MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponseBody GetCurrentExchangeRates(MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequestBody GetCurrentExchangeRates1) {
-            MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequest inValue = new MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequest();
+        public MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponseBody GetCurrentExchangeRates(MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequestBody GetCurrentExchangeRates1) {
+            MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequest inValue = new MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequest();
             inValue.GetCurrentExchangeRates = GetCurrentExchangeRates1;
-            MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponse retVal = ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetCurrentExchangeRates(inValue);
+            MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponse retVal = ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetCurrentExchangeRates(inValue);
             return retVal.GetCurrentExchangeRatesResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponse> MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetCurrentExchangeRatesAsync(MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequest request) {
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponse> MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetCurrentExchangeRatesAsync(MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequest request) {
             return base.Channel.GetCurrentExchangeRatesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponse> GetCurrentExchangeRatesAsync(MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequestBody GetCurrentExchangeRates) {
-            MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequest inValue = new MNBXml.MNBServiceReference1.GetCurrentExchangeRatesRequest();
+        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponse> GetCurrentExchangeRatesAsync(MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequestBody GetCurrentExchangeRates) {
+            MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequest inValue = new MNBXml.MNBServiceReference.GetCurrentExchangeRatesRequest();
             inValue.GetCurrentExchangeRates = GetCurrentExchangeRates;
-            return ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetCurrentExchangeRatesAsync(inValue);
+            return ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetCurrentExchangeRatesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        MNBXml.MNBServiceReference1.GetDateIntervalResponse MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetDateInterval(MNBXml.MNBServiceReference1.GetDateIntervalRequest request) {
+        MNBXml.MNBServiceReference.GetDateIntervalResponse MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetDateInterval(MNBXml.MNBServiceReference.GetDateIntervalRequest request) {
             return base.Channel.GetDateInterval(request);
         }
         
-        public MNBXml.MNBServiceReference1.GetDateIntervalResponseBody GetDateInterval(MNBXml.MNBServiceReference1.GetDateIntervalRequestBody GetDateInterval1) {
-            MNBXml.MNBServiceReference1.GetDateIntervalRequest inValue = new MNBXml.MNBServiceReference1.GetDateIntervalRequest();
+        public MNBXml.MNBServiceReference.GetDateIntervalResponseBody GetDateInterval(MNBXml.MNBServiceReference.GetDateIntervalRequestBody GetDateInterval1) {
+            MNBXml.MNBServiceReference.GetDateIntervalRequest inValue = new MNBXml.MNBServiceReference.GetDateIntervalRequest();
             inValue.GetDateInterval = GetDateInterval1;
-            MNBXml.MNBServiceReference1.GetDateIntervalResponse retVal = ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetDateInterval(inValue);
+            MNBXml.MNBServiceReference.GetDateIntervalResponse retVal = ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetDateInterval(inValue);
             return retVal.GetDateIntervalResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetDateIntervalResponse> MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetDateIntervalAsync(MNBXml.MNBServiceReference1.GetDateIntervalRequest request) {
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetDateIntervalResponse> MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetDateIntervalAsync(MNBXml.MNBServiceReference.GetDateIntervalRequest request) {
             return base.Channel.GetDateIntervalAsync(request);
         }
         
-        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetDateIntervalResponse> GetDateIntervalAsync(MNBXml.MNBServiceReference1.GetDateIntervalRequestBody GetDateInterval) {
-            MNBXml.MNBServiceReference1.GetDateIntervalRequest inValue = new MNBXml.MNBServiceReference1.GetDateIntervalRequest();
+        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetDateIntervalResponse> GetDateIntervalAsync(MNBXml.MNBServiceReference.GetDateIntervalRequestBody GetDateInterval) {
+            MNBXml.MNBServiceReference.GetDateIntervalRequest inValue = new MNBXml.MNBServiceReference.GetDateIntervalRequest();
             inValue.GetDateInterval = GetDateInterval;
-            return ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetDateIntervalAsync(inValue);
+            return ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetDateIntervalAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        MNBXml.MNBServiceReference1.GetExchangeRatesResponse MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetExchangeRates(MNBXml.MNBServiceReference1.GetExchangeRatesRequest request) {
+        MNBXml.MNBServiceReference.GetExchangeRatesResponse MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetExchangeRates(MNBXml.MNBServiceReference.GetExchangeRatesRequest request) {
             return base.Channel.GetExchangeRates(request);
         }
         
-        public MNBXml.MNBServiceReference1.GetExchangeRatesResponseBody GetExchangeRates(MNBXml.MNBServiceReference1.GetExchangeRatesRequestBody GetExchangeRates1) {
-            MNBXml.MNBServiceReference1.GetExchangeRatesRequest inValue = new MNBXml.MNBServiceReference1.GetExchangeRatesRequest();
+        public MNBXml.MNBServiceReference.GetExchangeRatesResponseBody GetExchangeRates(MNBXml.MNBServiceReference.GetExchangeRatesRequestBody GetExchangeRates1) {
+            MNBXml.MNBServiceReference.GetExchangeRatesRequest inValue = new MNBXml.MNBServiceReference.GetExchangeRatesRequest();
             inValue.GetExchangeRates = GetExchangeRates1;
-            MNBXml.MNBServiceReference1.GetExchangeRatesResponse retVal = ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetExchangeRates(inValue);
+            MNBXml.MNBServiceReference.GetExchangeRatesResponse retVal = ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetExchangeRates(inValue);
             return retVal.GetExchangeRatesResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetExchangeRatesResponse> MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetExchangeRatesAsync(MNBXml.MNBServiceReference1.GetExchangeRatesRequest request) {
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetExchangeRatesResponse> MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetExchangeRatesAsync(MNBXml.MNBServiceReference.GetExchangeRatesRequest request) {
             return base.Channel.GetExchangeRatesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetExchangeRatesResponse> GetExchangeRatesAsync(MNBXml.MNBServiceReference1.GetExchangeRatesRequestBody GetExchangeRates) {
-            MNBXml.MNBServiceReference1.GetExchangeRatesRequest inValue = new MNBXml.MNBServiceReference1.GetExchangeRatesRequest();
+        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetExchangeRatesResponse> GetExchangeRatesAsync(MNBXml.MNBServiceReference.GetExchangeRatesRequestBody GetExchangeRates) {
+            MNBXml.MNBServiceReference.GetExchangeRatesRequest inValue = new MNBXml.MNBServiceReference.GetExchangeRatesRequest();
             inValue.GetExchangeRates = GetExchangeRates;
-            return ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetExchangeRatesAsync(inValue);
+            return ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetExchangeRatesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        MNBXml.MNBServiceReference1.GetInfoResponse MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetInfo(MNBXml.MNBServiceReference1.GetInfoRequest request) {
+        MNBXml.MNBServiceReference.GetInfoResponse MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetInfo(MNBXml.MNBServiceReference.GetInfoRequest request) {
             return base.Channel.GetInfo(request);
         }
         
-        public MNBXml.MNBServiceReference1.GetInfoResponseBody GetInfo(MNBXml.MNBServiceReference1.GetInfoRequestBody GetInfo1) {
-            MNBXml.MNBServiceReference1.GetInfoRequest inValue = new MNBXml.MNBServiceReference1.GetInfoRequest();
+        public MNBXml.MNBServiceReference.GetInfoResponseBody GetInfo(MNBXml.MNBServiceReference.GetInfoRequestBody GetInfo1) {
+            MNBXml.MNBServiceReference.GetInfoRequest inValue = new MNBXml.MNBServiceReference.GetInfoRequest();
             inValue.GetInfo = GetInfo1;
-            MNBXml.MNBServiceReference1.GetInfoResponse retVal = ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetInfo(inValue);
+            MNBXml.MNBServiceReference.GetInfoResponse retVal = ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetInfo(inValue);
             return retVal.GetInfoResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetInfoResponse> MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap.GetInfoAsync(MNBXml.MNBServiceReference1.GetInfoRequest request) {
+        System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetInfoResponse> MNBXml.MNBServiceReference.MNBArfolyamServiceSoap.GetInfoAsync(MNBXml.MNBServiceReference.GetInfoRequest request) {
             return base.Channel.GetInfoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference1.GetInfoResponse> GetInfoAsync(MNBXml.MNBServiceReference1.GetInfoRequestBody GetInfo) {
-            MNBXml.MNBServiceReference1.GetInfoRequest inValue = new MNBXml.MNBServiceReference1.GetInfoRequest();
+        public System.Threading.Tasks.Task<MNBXml.MNBServiceReference.GetInfoResponse> GetInfoAsync(MNBXml.MNBServiceReference.GetInfoRequestBody GetInfo) {
+            MNBXml.MNBServiceReference.GetInfoRequest inValue = new MNBXml.MNBServiceReference.GetInfoRequest();
             inValue.GetInfo = GetInfo;
-            return ((MNBXml.MNBServiceReference1.MNBArfolyamServiceSoap)(this)).GetInfoAsync(inValue);
+            return ((MNBXml.MNBServiceReference.MNBArfolyamServiceSoap)(this)).GetInfoAsync(inValue);
         }
     }
 }

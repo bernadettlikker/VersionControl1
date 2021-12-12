@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\MNBServiceReference1\Reference.cs">
+    <Compile Include="Connected Services\MNBServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -61,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -70,48 +73,48 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\MNBServiceReference1\arfolyamok.wsdl" />
-    <None Include="Connected Services\MNBServiceReference1\arfolyamok.xsd">
+    <None Include="Connected Services\MNBServiceReference\arfolyamok.wsdl" />
+    <None Include="Connected Services\MNBServiceReference\arfolyamok.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\arfolyamok1.xsd">
+    <None Include="Connected Services\MNBServiceReference\arfolyamok1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBArfolyamServiceSoapImpl.wsdl" />
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetCurrenciesResponse.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBArfolyamServiceSoapImpl.wsdl" />
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetCurrenciesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetCurrenciesResponseBody.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetCurrenciesResponseBody.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetCurrencyUnitsResponse.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetCurrencyUnitsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetCurrencyUnitsResponseBody.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetCurrencyUnitsResponseBody.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponse.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetCurrentExchangeRatesResponseBody.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetCurrentExchangeRatesResponseBody.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetDateIntervalResponse.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetDateIntervalResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetDateIntervalResponseBody.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetDateIntervalResponseBody.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetExchangeRatesResponse.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetExchangeRatesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetExchangeRatesResponseBody.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetExchangeRatesResponseBody.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetInfoResponse.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetInfoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\MNBServiceReference1\MNBXml.MNBServiceReference1.GetInfoResponseBody.datasource">
+    <None Include="Connected Services\MNBServiceReference\MNBXml.MNBServiceReference.GetInfoResponseBody.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
@@ -131,19 +134,19 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\MNBServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\MNBServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\MNBServiceReference1\arfolyamok.disco" />
+    <None Include="Connected Services\MNBServiceReference\arfolyamok.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\MNBServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\MNBServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\MNBServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\MNBServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\MNBServiceReference1\Reference.svcmap">
+    <None Include="Connected Services\MNBServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="ESVe7aLUDLvW/iHJhigTyVnnWTneGcWY1H119ky53sw=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="EelxQN2E+v6eVNu7lldr7wN2X97Yl4Ask8Bp3g0B6O4=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="CustomBinding_MNBArfolyamServiceSoap">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="CustomBinding_MNBArfolyamServiceSoap" contract="MNBServiceReference1.MNBArfolyamServiceSoap" bindingType="basicHttpBinding" address="http://www.mnb.hu/arfolyamok.asmx" bindingConfiguration="CustomBinding_MNBArfolyamServiceSoap">
+    <endpoint name="CustomBinding_MNBArfolyamServiceSoap" contract="MNBServiceReference.MNBArfolyamServiceSoap" bindingType="basicHttpBinding" address="http://www.mnb.hu/arfolyamok.asmx" bindingConfiguration="CustomBinding_MNBArfolyamServiceSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://www.mnb.hu/arfolyamok.asmx</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>CustomBinding_MNBArfolyamServiceSoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>MNBServiceReference1.MNBArfolyamServiceSoap</serializedValue>
+          <serializedValue>MNBServiceReference.MNBArfolyamServiceSoap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>
