@@ -29,9 +29,9 @@ namespace MNBXml
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.chartRateData = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.TolPicker = new System.Windows.Forms.DateTimePicker();
@@ -43,27 +43,28 @@ namespace MNBXml
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 71);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(479, 442);
+            this.dataGridView1.Size = new System.Drawing.Size(388, 442);
             this.dataGridView1.TabIndex = 0;
             // 
             // chartRateData
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartRateData.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartRateData.Legends.Add(legend5);
-            this.chartRateData.Location = new System.Drawing.Point(497, 71);
+            chartArea3.Name = "ChartArea1";
+            this.chartRateData.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartRateData.Legends.Add(legend3);
+            this.chartRateData.Location = new System.Drawing.Point(406, 71);
             this.chartRateData.Name = "chartRateData";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartRateData.Series.Add(series5);
-            this.chartRateData.Size = new System.Drawing.Size(698, 442);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartRateData.Series.Add(series3);
+            this.chartRateData.Size = new System.Drawing.Size(789, 442);
             this.chartRateData.TabIndex = 1;
             this.chartRateData.Text = "chart1";
             // 
@@ -81,7 +82,7 @@ namespace MNBXml
             this.IgPicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.IgPicker.Location = new System.Drawing.Point(219, 12);
             this.IgPicker.Name = "IgPicker";
-            this.IgPicker.Size = new System.Drawing.Size(139, 26);
+            this.IgPicker.Size = new System.Drawing.Size(149, 26);
             this.IgPicker.TabIndex = 3;
             this.IgPicker.ValueChanged += new System.EventHandler(this.paramChanged);
             // 
