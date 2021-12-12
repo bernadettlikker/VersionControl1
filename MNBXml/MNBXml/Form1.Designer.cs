@@ -40,7 +40,7 @@ namespace MNBXml
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(359, 407);
+            this.dataGridView1.Size = new System.Drawing.Size(479, 407);
             this.dataGridView1.TabIndex = 0;
             // 
             // Form1
